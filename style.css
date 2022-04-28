@@ -1,0 +1,537 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Far From Homecoming";
+  src: url("./fonts/Far-From_Homecoming.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+header {
+  height: 80px;
+  width: 100%;
+  background: #b11313;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img:nth-child(1) {
+  width: 40px;
+}
+.logo img:nth-child(2) {
+  margin: 0 15px;
+}
+.logo img:nth-child(3) {
+  width: 140px;
+  height: 50px;
+}
+.menu {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li {
+  position: relative;
+  list-style-type: none;
+}
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.menu li a:hover {
+  color: #114c92;
+}
+.toggle {
+  display: none;
+  width: 30px;
+  height: 20px;
+  background: url(./images/menu.png) no-repeat center/cover;
+  transition: 0.3s;
+}
+.toggle.active {
+  background: url(./images/close.png) no-repeat center/cover;
+}
+section {
+  overflow: hidden;
+  padding: 20px 100px;
+}
+section.first_section {
+  width: 100%;
+  height: 120vh;
+  background: url(./images/img1.png) no-repeat center / cover;
+  background-position-y: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first_section .txtbox {
+  position: relative;
+  width: 100%;
+}
+.first_section .txtbox h1 {
+  color: #fff;
+  font-size: 6em;
+  font-family: "Far From Homecoming";
+  font-weight: 200;
+  letter-spacing: 2px;
+  /* A retoucher */
+}
+.first_section .txtbox ul {
+  display: flex;
+  margin: 100px 0 80px 0;
+}
+.first_section .txtbox ul li {
+  position: relative;
+  list-style: none;
+}
+.btn {
+  position: relative;
+  background: #fff;
+  color: #b11313;
+  padding: 15px 25px;
+  border-radius: 18px;
+  border: 1px solid #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.first_section .txtbox ul li:nth-child(1) {
+  margin-right: 25px;
+}
+.first_section .txtbox ul li:nth-child(2) a {
+  color: #fff;
+  background: transparent;
+}
+
+.first_section .txtbox h2 {
+  color: #fff;
+}
+
+/*  ********************  deuxieme section  ************************* */
+.second_section {
+  background: #b11313;
+}
+.second_section .container {
+  display: flex;
+  justify-content: space-between;
+}
+.second_section .titre {
+  width: 600px;
+  margin-bottom: 20px;
+}
+.second_section .titre h1 {
+  font-size: 3.2em;
+  font-family: "Far From Homecoming", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: #fff;
+}
+.second_section .titre p {
+  color: #fff;
+  word-spacing: 1px;
+}
+
+.container .carte .img_box {
+  width: 306px;
+  height: 320px;
+  margin-bottom: 30px;
+}
+.container .carte .img_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .carte .txt_box {
+  width: 306px;
+  margin-bottom: 30px;
+}
+.carte .txt_box p {
+  color: #fff;
+  text-align: justify;
+  position: relative;
+}
+.carte .txt_box .lien {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.carte .txt_box a {
+  display: inline-block;
+}
+
+/*  ********************  troisieme section  ************************* */
+section.third_section {
+  background: #114c92 url(./images/img5.png) no-repeat;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 555px;
+}
+.third_section .formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+}
+.third_section .formulaire h1 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Far From Homecoming", Arial, Helvetica, sans-serif;
+}
+.third_section .formulaire p {
+  color: #fff;
+  margin: 15px 0;
+}
+.third_section .formulaire form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.third_section .formulaire form input,
+.fourth_section .inscription form input {
+  width: 400px;
+  padding: 8px 15px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
+  color: #000;
+}
+.third_section .formulaire form button {
+  background: transparent;
+  color: white;
+  border: none;
+  border: 1px solid #fff;
+  padding: 15px 50px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+}
+/*  ********************  quatrieme section  ************************* */
+
+section.fourth_section {
+  background: #b11313 url(./images/img6.png) no-repeat;
+  background-position: right;
+  background-size: contain;
+  padding-top: 100px;
+  height: 110vh;
+}
+.fourth_section .inscription {
+  width: 600px;
+  height: 500px;
+}
+.fourth_section .inscription h1 {
+  font-family: "Far From Homecoming", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #fff;
+}
+.fourth_section .inscription p.txt {
+  color: rgba(255, 255, 255, 0.74);
+  margin: 15px 0 60px;
+}
+.fourth_section .inscription form {
+  width: 100%;
+}
+.fourth_section .inscription form input {
+  background: transparent;
+  border: 1px solid #fff;
+}
+.fourth_section .inscription form input::placeholder {
+  color: rgba(255, 255, 255, 0.623);
+}
+.fourth_section .inscription form .condition {
+  margin: 20px 0 40px;
+  display: flex;
+}
+.fourth_section .inscription form .condition input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.fourth_section .inscription form .condition p {
+  width: 435px;
+  color: rgba(255, 255, 255, 0.671);
+}
+.fourth_section .inscription form .condition p a {
+  color: rgba(255, 255, 255, 0.671);
+}
+.fourth_section .inscription form button {
+  position: relative;
+  background: #fff;
+  color: #b11313;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 50px;
+}
+/*  ********************  FOOTER  ************************* */
+footer {
+  position: relative;
+  width: 100%;
+  background: #000;
+  padding: 100px 30px 50px 30px;
+  overflow: hidden;
+}
+footer .content .line {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content li {
+  list-style: none;
+}
+.content li a {
+  text-decoration: none;
+  color: #fff;
+}
+.content select {
+  margin-left: 20px;
+  background: #b11313;
+  color: white;
+  border: none;
+  width: 200px;
+  padding: 5px;
+  border-radius: 20px;
+  outline: none;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 100px auto 50px;
+  width: 250px;
+}
+.social li {
+  list-style: none;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #b11313;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+}
+footer figure{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* *******************  VERSION MOBILE */
+
+@media screen and (max-width: 800px) {
+  header {
+    padding: 10px 25px;
+    height: 60px;
+  }
+  .logo img:nth-child(1) {
+    width: 20px;
+  }
+  .logo img:nth-child(2) {
+    width: 20px;
+    margin: 5px;
+  }
+  .logo img:nth-child(3) {
+    width: 65px;
+    height: 30px;
+  }
+  .toggle {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #114c92;
+    width: 100%;
+    margin-top: 55px;
+    height: 100vh;
+    z-index: 999;
+    border-radius: 40px;
+    transform: translateX(-100%);
+    transition: 0.5s;
+  }
+  .menu.active {
+    transform: translateX(0);
+  }
+  .menu li {
+    margin: 20px 0;
+  }
+  .menu li a {
+    font-size: 32px;
+  }
+  .menu li a:hover {
+    color: #000;
+  }
+  section {
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+  }
+  section.first_section {
+    height: 300px;
+    background-position: right;
+  }
+
+  .first_section .txtbox ul {
+    margin: 0;
+    margin-top: 70px;
+  }
+
+  .first_section .txtbox h1 {
+    font-size: 32px;
+  }
+  .first_section .txtbox h2 {
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+  }
+  .btn {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  section.second_section {
+    justify-content: center;
+  }
+  .second_section .titre {
+    width: 100%;
+  }
+  .second_section .titre h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .second_section .titre p {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0;
+  }
+  .container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .second_section .container .carte {
+    margin-bottom: 50px;
+  }
+  section.third_section {
+    background-position: top;
+    background-size: contain;
+    height: auto;
+  }
+  .third_section .formulaire {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .third_section .formulaire h1 {
+    font-size: 20px;
+  }
+  .third_section .formulaire p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .third_section .formulaire form input {
+    width: 100%;
+  }
+  section.fourth_section {
+    padding-top: 0;
+    background-position-x: -50%;
+    background-position-y: bottom;
+    background-size: contain;
+    height: auto;
+  }
+  .fourth_section .inscription {
+    margin: 30px 0;
+    height: auto;
+    width: 100%;
+  }
+  .fourth_section .inscription h1,
+  .fourth_section .inscription p {
+    text-align: center;
+  }
+  .fourth_section .inscription h1 {
+    font-size: 18px;
+  }
+  .fourth_section .inscription p {
+    font-size: 14px;
+  }
+  .fourth_section .inscription form input {
+    width: 100%;
+  }
+  .fourth_section .inscription form .condition p {
+    margin: 0;
+  }
+  .fourth_section .inscription form .condition input[type="checkbox"] {
+    width: 30px;
+    margin: 0;
+  }
+
+  footer {
+    overflow: hidden;
+    padding: 40px 20px 20px;
+  }
+  footer .content {
+    position: relative;
+    align-items: start;
+  }
+  footer .content .line {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: auto;
+  }
+  footer .content .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+  }
+}
